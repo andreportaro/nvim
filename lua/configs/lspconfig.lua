@@ -6,7 +6,7 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 local util = require "lspconfig/util"
 
-local servers = { "html", "php", "cssls" }
+local servers = { "html", "php", "cssls", "pyright" }
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -44,7 +44,7 @@ nvim_lsp.intelephense.setup({
     settings = {
         intelephense = {
             environment = {
-              includePaths = {"/Users/andre/.composer/", "~/Code/roofr-dev/roofr/vendor/"}
+              includePaths = {"/Users/andre/.composer/", "~/Code/roofr-dev/roofr/vendor/", "~/Code/duraflex-app/vendor/", "~/Code/painelempresa/painelempresa/vendor/"}
             };
             files = {
                 maxSize = 5000000;
