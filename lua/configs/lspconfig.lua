@@ -37,7 +37,7 @@ nvim_lsp.intelephense.setup({
     settings = {
         intelephense = {
             environment = {
-              includePaths = {"/Users/andre/.composer/", "~/Code/roofr-dev/roofr/vendor/"}
+              includePaths = {"/Users/andre/.composer/", "~/Code/roofr-dev/roofr/vendor/", "~/Code/duraflex-app/vendor/", "~/Code/painelempresa/painelempresa/vendor/"}
             };
             files = {
                 maxSize = 5000000;
