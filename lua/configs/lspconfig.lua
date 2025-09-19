@@ -6,7 +6,7 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 local util = require "lspconfig/util"
 
-local servers = { "html", "php", "cssls" }
+local servers = { "html", "php", "cssls", "intelephense", "pyright" }
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -16,13 +16,6 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-
--- typescript
--- lspconfig.tsserver.setup {
---   on_attach = on_attach,
---   on_init = on_init,
---   capabilities = capabilities,
--- }
 
 -- gopls 
 lspconfig.gopls.setup {
